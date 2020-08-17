@@ -1,0 +1,18 @@
+{
+  "name": "biblia",
+  "version": "1.0.0",
+  "description": "Apollo-server para la Biblia",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd src && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexis Poveda",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.16.1",
+    "graphql": "^15.3.0",
+    "sequelize": "^6.3.4",
+    "sqlite3": "^5.0.0"
+  }
+}
