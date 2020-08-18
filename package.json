@@ -10,17 +10,17 @@
   "author": "Alexis Poveda",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
     "apollo-server": "^2.16.1",
     "babel": "^6.23.0",
+    "babel-watch": "^7.0.0",
     "graphql": "^15.3.0",
     "sequelize": "^6.3.4",
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.1",
-    "@babel/preset-env": "^7.11.0",
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-watch": "^7.0.0"
+    "babel-preset-env": "^1.7.0"
   }
 }
