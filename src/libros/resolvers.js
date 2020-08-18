@@ -1,5 +1,5 @@
-const {Libro} = require('./Libro')
-const {Capitulo} = require('../capitulos/Capitulo');
+import Libro from './Libro';
+import Capitulo from '../capitulos/Capitulo';
 
 const resolvers = {
     Query: {
@@ -11,4 +11,4 @@ const resolvers = {
     }
 };
 
-module.exports = {resolvers}
+export default resolvers

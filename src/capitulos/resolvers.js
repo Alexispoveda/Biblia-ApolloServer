@@ -1,6 +1,7 @@
-const {Capitulo} = require('./Capitulo')
-const {Versiculo} = require('../versiculos/Versiculo');
-const {Libro} = require('../libros/Libro');
+import Capitulo from'./Capitulo';
+import Versiculo from'../versiculos/Versiculo';
+import Libro from'../libros/Libro';
+
 
 const resolvers = {
     Query: {
@@ -12,4 +13,4 @@ const resolvers = {
     }
 };
 
-module.exports = {resolvers}
+export default resolvers

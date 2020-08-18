@@ -4,7 +4,7 @@
   "description": "Apollo-server para la Biblia",
   "main": "index.js",
   "scripts": {
-    "start": "cd src && node index.js",
+    "start": "cd src && babel-watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alexis Poveda",
@@ -14,5 +14,12 @@
     "graphql": "^15.3.0",
     "sequelize": "^6.3.4",
     "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^7.0.0"
   }
 }

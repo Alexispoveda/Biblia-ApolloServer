@@ -1,8 +1,8 @@
-const { Versiculo } = require("./Versiculo")
-const { resolvers } = require('./resolvers')
-const { typeDef } = require('./typeDef')
+import Versiculo from "./Versiculo";
+import resolvers from './resolvers';
+import typeDef from './typeDef';
 
-module.exports = {
+export {
     Versiculo,
     resolvers,
     typeDef

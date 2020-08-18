@@ -1,4 +1,4 @@
-const { ApolloServer, gql } = require('apollo-server')
+import { ApolloServer, gql } from 'apollo-server';
 const libros = require('./libros')
 const capitulos = require('./capitulos')
 const versiculos = require('./versiculos')
@@ -12,4 +12,4 @@ const server = new ApolloServer({
     resolvers:[libros.resolvers,capitulos.resolvers,versiculos.resolvers]
 })
 
-server.listen().then(({url}) => {console.log('Apollo Server listo en: '+url)})
+server.listen().then(({url}) => {console.log('🚀 Apollo Server listo en: '+url)})

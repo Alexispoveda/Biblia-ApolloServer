@@ -1,8 +1,8 @@
-const { Libro } = require("./Libro")
-const { resolvers } = require('./resolvers')
-const { typeDef } = require('./typeDef')
+import Libro from "./Libro";
+import resolvers from './resolvers';
+import typeDef from './typeDef';
 
-module.exports = {
+export {
     Libro,
     resolvers,
     typeDef

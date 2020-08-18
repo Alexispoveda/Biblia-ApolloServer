@@ -1,6 +1,5 @@
-const {DataTypes} = require('sequelize')
-const sequelize = require('../db')
-const {Capitulo} = require('../capitulos/Capitulo')
+import {DataTypes} from 'sequelize';
+import sequelize from '../db';
 
 const Versiculo = sequelize.define('Versiculo',{
     id_versiculo:{
@@ -13,4 +12,4 @@ const Versiculo = sequelize.define('Versiculo',{
 }
 ,{timestamps:false,tableName:'versiculos'});
 
-module.exports = {Versiculo}
+export default Versiculo

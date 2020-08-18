@@ -1,8 +1,9 @@
-const { Capitulo } = require("./Capitulo")
-const { resolvers } = require('./resolvers')
-const { typeDef } = require('./typeDef')
+import Capitulo from './Capitulo'
+import resolvers from './resolvers'
+import typeDef from './typeDef';
 
-module.exports = {
+
+export {
     Capitulo,
     resolvers,
     typeDef

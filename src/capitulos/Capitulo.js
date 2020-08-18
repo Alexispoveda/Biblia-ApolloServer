@@ -1,6 +1,6 @@
-const {DataTypes} = require('sequelize');
-const sequelize = require('../db');
-const {Versiculo} = require('../versiculos/Versiculo');
+import {DataTypes} from 'sequelize';
+import sequelize from '../db';
+import Versiculo from '../versiculos/Versiculo'
 
 const Capitulo = sequelize.define('Capitulo',{
     id_capitulo:{
@@ -15,4 +15,4 @@ const Capitulo = sequelize.define('Capitulo',{
 Capitulo.hasMany(Versiculo,{foreignKey:'id_capitulo'})
 Versiculo.belongsTo(Capitulo,{foreignKey:'id_capitulo'})
 
-module.exports = {Capitulo}
+export default Capitulo
