@@ -9,7 +9,11 @@ const typeDef = gql`
 
 const server = new ApolloServer({
     typeDefs: [typeDef,libros.typeDef,capitulos.typeDef,versiculos.typeDef],
-    resolvers:[libros.resolvers,capitulos.resolvers,versiculos.resolvers]
+    resolvers:[libros.resolvers,capitulos.resolvers,versiculos.resolvers],
+    engine:{
+      reportSchema:true,
+      variant:"current"
+    }
 })
 
 server.listen().then(({url}) => {console.log('🚀 Apollo Server listo en: '+url)})
