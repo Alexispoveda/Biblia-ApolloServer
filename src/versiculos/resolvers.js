@@ -5,7 +5,7 @@ import Libro from '../libros/Libro';
 const resolvers = {
     Query: {
       versiculos: () => Versiculo.findAll(),
-      versiculo: (parent, args) => Versiculo.findOne({
+      versiculo: (_, args) => Versiculo.findOne({
         where:{num_versiculo:args.numero},
         include:
           {model:Capitulo,where:{numero_capitulo:args.capitulo},
