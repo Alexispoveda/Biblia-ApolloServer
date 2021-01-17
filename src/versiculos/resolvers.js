@@ -8,8 +8,10 @@ const resolvers = {
       versiculo: (_, args) => Versiculo.findOne({
         where:{num_versiculo:args.numero},
         include:
-          {model:Capitulo,where:{numero_capitulo:args.capitulo},
-            include:{model:Libro,where:{nombre:args.libro}}},
+          {
+            model:Capitulo,where:{numero_capitulo:args.capitulo},
+            include:{model:Libro,where:{nombre:args.libro}}
+          },
         })
       }
 };
